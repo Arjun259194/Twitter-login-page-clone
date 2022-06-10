@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+:root{
+  --primary-color:#1d9bf0;
+  --secondary-color:#2f3336;
+  --black:#000;
+  --white:#fff;
+
+  --primary-hover:#006fd6;
+  --secondary-hover:#71767b;
+
+  --font-color:#e7e9ea;
+  --font-color-2:#d6d9d8;
+
+  --border-color:#536471;
+  --border-color:#333639;
+}
+
+main,body{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+main{
+  height: 92vh;
+  display: grid;
+  grid-template-columns:1fr 1fr; 
+}
+
+.left{
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url(img/lohp_en_1302x955.png);
+  background-position: cover;
+}
+
+#twitter_bird{
+  aspect-ratio: 1/1;
+  width: 60%;
+}
+
+.right{
+  
+}
+
+.form-logo{
+  aspect-ratio:1/1;
+  width:3rem;
+}
+
+.form-logo svg{
+  fill:var(--font-color);
+}
+
+.btn-prim{
+  font-size: 1rem;
+}
+
+.btn-prim svg{
+  /* aspect-ratio: 1/1; */
+  width: 1rem;
+  height: 1rem;
+}
+
+.dividers{
+  width:75%;
+  display: flex;
+  align-items: center;
+}
+
+.dividers::after,
+.dividers::before{
+  content: '';
+  display: inline-block;
+  width: 25%;
+  height: 1px;
+  background-color: var(--border-color);
+  margin-inline: .5rem;
+}
+
+.second-btn{
+  background-color:var(--primary-color);
+  color: var(--font-color);
+
+  transition: all 500ms ease;
+}
+
+.second-btn:hover{
+  background-color: var(--primary-hover);
+}
+
+.note,.note-link{
+  font-size: .6rem;
+  font-weight: 100;
+}
+
+.note{
+  color:var(--font-color-2);
+}
+
+.note-link{
+  color: var(--primary-color);
+}
+
+.footer-item-list{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap row;
+  list-style: none;
+}
+
+.footer-item{
+  margin-left:1rem;
+  font-weight: 100;
+  color: var(--font-color);
+}
