@@ -13,8 +13,8 @@
   --black:#000;
   --white:#fff;
 
-  --primary-hover:#006fd6;
-  --secondary-hover:#71767b;
+  --primary-hover:#0174e0;
+  --secondary-hover:#e7e9ea;
 
   --font-color:#e7e9ea;
   --font-color-2:#d6d9d8;
@@ -26,6 +26,10 @@
 main,body{
   background-color: var(--black);
   color: var(--white);
+}
+
+button,a{
+  cursor: pointer;
 }
 
 main{
@@ -87,15 +91,21 @@ main{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 50%;
 }
 
 .btn-prim{
+  width:100%;
   padding: .5rem 4rem;
   font-size: 1rem;
   background-color:var(--white);
   border: none;
   border-radius:2rem;
-  margin: .5rem;
+  margin: .5rem 0;
+}
+
+.btn-prim:hover{
+  background-color:var(--secondary-hover);
 }
 
 .btn-prim svg{
@@ -122,8 +132,14 @@ main{
 .second-btn{
   background-color:var(--primary-color);
   color: var(--font-color);
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius:2rem;
+  margin: .5rem 0;
+  width: 100%;
 
-  transition: all 500ms ease;
+  transition: all 200ms ease-out;
 }
 
 .second-btn:hover{
@@ -131,12 +147,13 @@ main{
 }
 
 .note,.note-link{
-  font-size: .6rem;
+  font-size: .7rem;
   font-weight: 100;
 }
 
 .note{
   color:var(--font-color-2);
+  /* width: 20ch; */
 }
 
 .note-link{
