@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: sans-serif;
 }
 
 :root{
@@ -75,7 +76,7 @@ main{
 
 .form-main-title{
   font-size: 4.5rem;
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .form-second-title{
@@ -132,7 +133,7 @@ main{
 .second-btn{
   background-color:var(--primary-color);
   color: var(--font-color);
-  padding: .5rem 2rem;
+  padding: .5rem 1rem;
   font-size: 1rem;
   border: none;
   border-radius:2rem;
@@ -182,15 +183,24 @@ main{
   background-color: hsl(205, 35%, 11%);
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-item-list{
+  padding: 1rem .25rem;
   display: flex;
   justify-content: center;
   flex-flow: wrap row;
   list-style: none;
+  width: 138ch;
 }
 
 .footer-item{
   margin-left:1rem;
+  font-size:.8rem;
   font-weight: 100;
-  color: var(--font-color);
+  color: var(--font-color-2);
 }
