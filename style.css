@@ -20,7 +20,7 @@
   --font-color-2:#d6d9d8;
 
   --border-color:#536471;
-  --border-color:#333639;
+  --border-color-2:#333639;
 }
 
 main,body{
@@ -159,6 +159,27 @@ main{
 .note-link{
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.login-option{
+  margin: 4rem 0 0 0;
+  color: var(--font-color-2);
+  width:100%;
+}
+
+.btn-three{
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  background-color:var(--black);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius:2rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.btn-three:hover{
+  background-color: hsl(205, 35%, 11%);
 }
 
 .footer-item-list{
