@@ -50,7 +50,8 @@ main{
 .right{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  padding: 1rem 0;
 }
 
 .form{
@@ -73,22 +74,37 @@ main{
   margin: 2rem 0;
 }
 
+.form-second-title{
+  font-size:2rem;
+  margin-bottom: 2rem;
+}
+
 .form-logo svg{
   fill:var(--font-color);
 }
 
+.signup-option{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .btn-prim{
+  padding: .5rem 4rem;
   font-size: 1rem;
+  background-color:var(--white);
+  border: none;
+  border-radius:2rem;
+  margin: .5rem;
 }
 
 .btn-prim svg{
-  /* aspect-ratio: 1/1; */
   width: 1rem;
   height: 1rem;
 }
 
 .dividers{
-  width:75%;
+  width:100%;
   display: flex;
   align-items: center;
 }
@@ -97,7 +113,7 @@ main{
 .dividers::before{
   content: '';
   display: inline-block;
-  width: 25%;
+  width: 50%;
   height: 1px;
   background-color: var(--border-color);
   margin-inline: .5rem;
